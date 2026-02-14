@@ -1,0 +1,140 @@
+  // Mock data
+export const persons = [
+  { id: "1", name: "Ahmed Khan", cnic: "42101-1234567-1" },
+  { id: "2", name: "Sara Ali", cnic: "42101-7654321-2" },
+  { id: "3", name: "Usman Shah", cnic: "42101-9876543-3" },
+  { id: "4", name: "Ayesha Malik", cnic: "42101-2345678-4" },
+  { id: "5", name: "Bilal Hussain", cnic: "42101-3456789-5" },
+  { id: "6", name: "Hina Farooq", cnic: "42101-4567890-6" },
+  { id: "7", name: "Zain Sheikh", cnic: "42101-5678901-7" },
+  { id: "8", name: "Ali Raza", cnic: "42101-6789012-8" },
+  { id: "9", name: "Fatima Noor", cnic: "42101-7890123-9" },
+  { id: "10", name: "Hamza Iqbal", cnic: "42101-8901234-0" },
+
+  { id: "11", name: "Sana Ahmed", cnic: "42102-1234567-1" },
+  { id: "12", name: "Omar Farooq", cnic: "42102-2345678-2" },
+  { id: "13", name: "Maham Siddiqui", cnic: "42102-3456789-3" },
+  { id: "14", name: "Tahir Mehmood", cnic: "42102-4567890-4" },
+  { id: "15", name: "Noor Ul Ain", cnic: "42102-5678901-5" },
+  { id: "16", name: "Saad Khan", cnic: "42102-6789012-6" },
+  { id: "17", name: "Anum Javed", cnic: "42102-7890123-7" },
+  { id: "18", name: "Fahad Akram", cnic: "42102-8901234-8" },
+  { id: "19", name: "Iqra Yousuf", cnic: "42103-1234567-9" },
+  { id: "20", name: "Rizwan Ahmed", cnic: "42103-2345678-0" },
+]
+
+ export const companies = [
+  {
+    id: "1",
+    name: "TechSoft Pvt Ltd",
+    address: "Plot 21, PECHS Block 6, Karachi, Pakistan",
+    phone: "+92 300 1234567",
+    website: "www.techsoft.com",
+    email: "info@techsoft.com",
+    createdAt: "2024-08-12",
+  },
+  {
+    id: "2",
+    name: "Alpha Solutions",
+    address: "Office 14, Gulberg III, Lahore, Pakistan",
+    phone: "+92 301 7654321",
+    website: "www.alphasolutions.com",
+    email: "contact@alphasolutions.com",
+    createdAt: "2023-11-05",
+  },
+  {
+    id: "3",
+    name: "NexaTech Systems",
+    address: "I-9 Industrial Area, Islamabad, Pakistan",
+    phone: "+92 322 4567890",
+    website: "www.nexatech.io",
+    email: "support@nexatech.io",
+    createdAt: "2024-01-18",
+  },
+  {
+    id: "4",
+    name: "CloudNova Technologies",
+    address: "Shahrah-e-Faisal, Karachi, Pakistan",
+    phone: "+92 333 9876543",
+    website: "www.cloudnova.tech",
+    email: "hello@cloudnova.tech",
+    createdAt: "2022-09-30",
+  },
+
+]
+
+export const clients = [
+  {
+    id: "1", // Client Auto Id
+    companyId: "1", // Company Auto Id (FK)
+    name: "Banking & Finance Client",
+    address: "I.I. Chundrigar Road, Karachi",
+    phone: "+92 21 35678901",
+    website: "www.bankclient.com",
+    email: "contact@bankclient.com",
+  },
+  {
+    id: "2",
+    companyId: "1",
+    name: "Healthcare Services Client",
+    address: "Clifton Block 2, Karachi",
+    phone: "+92 300 5678901",
+    website: "www.healthcareclient.com",
+    email: "info@healthcareclient.com",
+  },
+  {
+    id: "3",
+    companyId: "2",
+    name: "E-Commerce Platform Client",
+    address: "Gulberg III, Lahore",
+    phone: "+92 321 4567890",
+    website: "www.ecommerceclient.com",
+    email: "support@ecommerceclient.com",
+  },
+  {
+    id: "4",
+    companyId: "2",
+    name: "Telecommunication Client",
+    address: "Blue Area, Islamabad",
+    phone: "+92 51 2345678",
+    website: "www.telecomclient.com",
+    email: "sales@telecomclient.com",
+  },
+  {
+    id: "5",
+    companyId: "3",
+    name: "Education Management Client",
+    address: "University Road, Peshawar",
+    phone: "+92 91 9876543",
+    website: "www.educationclient.com",
+    email: "admin@educationclient.com",
+  },
+  {
+    id: "6",
+    companyId: "4",
+    name: "Government Sector Client",
+    address: "Civil Secretariat, Quetta",
+    phone: "+92 81 2233445",
+    website: "www.govclient.pk",
+    email: "gov@govclient.pk",
+  },
+  {
+    id: "7",
+    companyId: "5",
+    name: "Logistics & Supply Chain Client",
+    address: "Port Qasim, Karachi",
+    phone: "+92 333 1122334",
+    website: "www.logisticsclient.com",
+    email: "operations@logisticsclient.com",
+  },
+]
+
+export const managers = [
+  { id: "1", name: "Ahmed Raza" },
+  { id: "2", name: "Sara Khan" },
+  { id: "3", name: "Usman Ali" },
+  { id: "4", name: "Ayesha Malik" },
+  { id: "5", name: "Bilal Hussain" },
+  { id: "6", name: "Hina Farooq" },
+  { id: "7", name: "Zain Sheikh" },
+]

@@ -1,0 +1,82 @@
+import { IoNotificationsSharp } from "react-icons/io5";
+import { CiLogin } from "react-icons/ci";
+import Profile from "./Profile";
+import ThemeToggle from "../../../ThemeToggle";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import Menu from "./Menu";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logoutUser } from "../../../redux/authSlice";
+
+const Header = () => {
+  const dispatch = useDispatch();
+
+  return (
+    <header className="fixed top-0 z-20 w-screen h-16 border-b bg-background px-3 sm:px-6 flex items-center justify-between">
+      
+      {/* LEFT */}
+      <div className="flex items-center gap-2 sm:gap-3">
+        <Menu />
+
+        <Link to="/mainScreen">
+          <h1 className="hidden sm:block text-lg font-semibold text-primary">
+            MIS Dashboard
+          </h1>
+        </Link>
+      </div>
+
+      {/* RIGHT */}
+      <div className="flex items-center gap-2 sm:gap-4">
+
+        {/* Theme */}
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <div>
+              <ThemeToggle  />
+            </div>
+          </TooltipTrigger>
+          <TooltipContent>Change Theme</TooltipContent>
+        </Tooltip>
+
+        {/* Notifications */}
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <button className="p-1 sm:p-2 rounded-full hover:bg-muted transition">
+              <IoNotificationsSharp
+               
+                className="lg:size-10 size-6 text-primary bg-primary/10 p-1 sm:p-2 rounded-full"
+              />
+            </button>
+          </TooltipTrigger>
+          <TooltipContent>Notifications</TooltipContent>
+        </Tooltip>
+
+        {/* Profile */}
+        <Profile />
+
+        {/* Logout */}
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <button
+              className="p-1 sm:p-2 rounded-full bg-muted hover:bg-muted/70 transition"
+              onClick={() => dispatch(logoutUser())}
+            >
+              <CiLogin
+              
+                className="lg:size-10 size-6 text-primary bg-primary/10 p-1 sm:p-2 rounded-full"
+              />
+            </button>
+          </TooltipTrigger>
+          <TooltipContent>Logout</TooltipContent>
+        </Tooltip>
+
+      </div>
+    </header>
+  );
+};
+
+export default Header;

@@ -1,0 +1,32 @@
+  import { 
+  Shield, 
+  User, 
+  Lock, 
+  Building2, 
+  Folder,
+  Phone,
+  Settings,
+  DollarSign,
+  Users,
+  Package,
+  Briefcase,
+  TrendingUp,
+  Zap,
+  Laptop,
+  ShoppingCart,
+  CheckCircle
+} from "lucide-react"
+  export const modules = [
+    { id: 1, name: "Administration", icon: Building2 },
+    { id: 2, name: "Call Center", icon: Phone },
+    { id: 3, name: "Control Panel", icon: Settings },
+    { id: 4, name: "Finance", icon: DollarSign },
+    { id: 5, name: "HR Management", icon: Users },
+    { id: 6, name: "Inventory", icon: Package },
+    { id: 7, name: "Sales", icon: Briefcase },
+    { id: 8, name: "Marketing", icon: TrendingUp },
+    { id: 9, name: "Operations", icon: Zap },
+    { id: 10, name: "IT Support", icon: Laptop },
+    { id: 11, name: "Procurement", icon: ShoppingCart },
+    { id: 12, name: "Quality Assurance", icon: CheckCircle },
+  ]
