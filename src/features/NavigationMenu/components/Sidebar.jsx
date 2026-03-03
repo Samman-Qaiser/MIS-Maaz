@@ -352,6 +352,42 @@ const sidebarMenus = {
       submenu: [{ name: "Web Link", link: "weblink" }],
     },
   ],
+  Credentialing: [
+    {
+      name: "Call Management",
+      icon: IoIosCall,
+      link: "callmanagement",
+      submenu: [
+        { name: "GA Calls", link: "gacalls" },
+        {
+          name: "Calls",
+          link: "calls",
+        },
+        { name: "E-Checking", link: "e-checking" },
+        { name: "Balance ", link: "balance " },
+        { name: "No Show", link: "noshow" },
+        { name: "Voice Message", link: "voicemessage" },
+        { name: "Frontdesk tracking", link: "frontdesktracking" },
+        { name: "Medical Record", link: "medicalrecord" },
+        { name: "IT Support", link: "itsupport" },
+      ],
+    },
+    {
+      name: "Reporting",
+      icon: BarChart,
+      link: "reporting",
+    },
+    {
+      name: "View",
+      icon: Eye,
+      link: "view",
+      submenu: [
+        { name: "Panel", link: "panel" },
+        { name: "Provider Detail", link: "providerdetail" },
+        { name: "Office Record", link: "officerecord" },
+      ],
+    },
+  ],
 };
 // Call Center
 //                 --->Call Group
@@ -366,6 +402,7 @@ const slugToDepartment = {
   ar: "AR",
   faxing: "Faxing",
   medicalbilling: "Medical Billing",
+  credentialing: "Credentialing",
 };
 
 const DynamicSidebar = () => {
