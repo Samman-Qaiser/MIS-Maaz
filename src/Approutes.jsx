@@ -7,6 +7,7 @@ import ARroutes from "./features/AR/routes/ARroutes";
 import FaxingRoutes from "./features/Faxing/routes/FaxingRoutes";
 import MedicalBillingRoutes from "./features/MedicalBilling/routes/MedicalBillingRoutes";
 import CredentialingRoutes from "./features/Credentialing/routes/CredentialingRoutes";
+import PriorAuthorizationRoutes from "./features/PriorAuthorization/routes/PriorAuthorizationRoutes";
 
 // Lazy load pages and layouts
 const Login = lazy(() => import("./auth/Login"));
@@ -82,6 +83,10 @@ const AppRoutes = () => {
           <Route path="/faxing/*" element={<FaxingRoutes />} />
           <Route path="/medicalbilling/*" element={<MedicalBillingRoutes />} />
           <Route path="/credentialing/*" element={<CredentialingRoutes />} />
+          <Route
+            path="/priorauthorization/*"
+            element={<PriorAuthorizationRoutes />}
+          />
         </Route>
 
         {/* 🔹 Catch all unknown routes */}

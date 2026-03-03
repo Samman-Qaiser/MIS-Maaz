@@ -20,6 +20,11 @@ import {
   BadgeDollarSign,
   FlaskConical,
   Form,
+  Truck,
+  User,
+  Bandage,
+  Archive,
+  Copy,
 } from "lucide-react";
 // lucide-react (modern + clean UI)
 import {
@@ -388,6 +393,66 @@ const sidebarMenus = {
       ],
     },
   ],
+  "Prior Authorization": [
+    {
+      name: "Call Management",
+      icon: IoIosCall,
+      link: "callmanagement",
+      submenu: [
+        { name: "GA Calls", link: "gacalls" },
+        {
+          name: "Calls",
+          link: "calls",
+        },
+        { name: "E-Checking", link: "e-checking" },
+        { name: "Balance ", link: "balance " },
+        { name: "No Show", link: "noshow" },
+        { name: "Voice Message", link: "voicemessage" },
+        { name: "Frontdesk tracking", link: "frontdesktracking" },
+        { name: "Medical Record", link: "medicalrecord" },
+        { name: "IT Support", link: "itsupport" },
+      ],
+    },
+    {
+      name: "Reporting",
+      icon: BarChart,
+      link: "reporting",
+    },
+    {
+      name: "Tracking",
+      icon: Truck,
+      link: "tracking",
+    },
+    {
+      name: "EPA",
+      icon: User,
+      link: "epa",
+    },
+    {
+      name: "Gaps in Care",
+      icon: Bandage,
+      link: "gapsincare",
+    },
+    {
+      name: "Letter Record",
+      icon: Archive,
+      link: "letterecord",
+    },
+    {
+      name: "Roster",
+      icon: Copy,
+      link: "roster",
+    },
+    {
+      name: "View",
+      icon: Eye,
+      link: "view",
+      submenu: [
+        { name: "Roll back", link: "rollback" },
+        { name: "Real-time Dashboard", link: "realtimedashboard" },
+      ],
+    },
+  ],
 };
 // Call Center
 //                 --->Call Group
@@ -403,6 +468,7 @@ const slugToDepartment = {
   faxing: "Faxing",
   medicalbilling: "Medical Billing",
   credentialing: "Credentialing",
+  priorauthorization: "Prior Authorization",
 };
 
 const DynamicSidebar = () => {
