@@ -15,6 +15,11 @@ import {
   CircleDollarSign,
   CircleArrowOutUpLeft,
   Printer,
+  BadgeCheck,
+  ReceiptText,
+  BadgeDollarSign,
+  FlaskConical,
+  Form,
 } from "lucide-react";
 // lucide-react (modern + clean UI)
 import {
@@ -281,6 +286,72 @@ const sidebarMenus = {
       ],
     },
   ],
+  "Medical Billing": [
+    {
+      name: "Call Management",
+      icon: IoIosCall,
+      link: "callmanagement",
+      submenu: [
+        { name: "GA Calls", link: "gacalls" },
+        {
+          name: "Calls",
+          link: "calls",
+        },
+        { name: "E-Checking", link: "e-checking" },
+        { name: "Balance ", link: "balance " },
+        { name: "No Show", link: "noshow" },
+        { name: "Voice Message", link: "voicemessage" },
+        { name: "Frontdesk tracking", link: "frontdesktracking" },
+        { name: "Medical Record", link: "medicalrecord" },
+        { name: "IT Support", link: "itsupport" },
+      ],
+    },
+    {
+      name: "Reporting",
+      icon: BarChart,
+      link: "reporting",
+    },
+    {
+      name: "Eligibility",
+      icon: BadgeCheck,
+      link: "eligibility",
+    },
+    {
+      name: "Open E-Bill",
+      icon: ReceiptText,
+      link: "open e-bill",
+    },
+    {
+      name: "Charge Entry",
+      icon: BadgeDollarSign,
+      link: "chargeentry",
+    },
+    {
+      name: "Lab Code",
+      icon: FlaskConical,
+      link: "lab code",
+    },
+    {
+      name: "Personal Balance",
+      icon: BadgeDollarSign,
+      link: "personalbalance",
+    },
+    {
+      name: "Forms",
+      icon: Form,
+      link: "forms",
+      submenu: [
+        { name: "Auto Check", link: "autocheck" },
+        { name: "GA management", link: "ga-management" },
+      ],
+    },
+    {
+      name: "View",
+      icon: Eye,
+      link: "view",
+      submenu: [{ name: "Web Link", link: "weblink" }],
+    },
+  ],
 };
 // Call Center
 //                 --->Call Group
@@ -293,7 +364,8 @@ const slugToDepartment = {
   callcenter: "Call Center",
   controlpannel: "Control Pannel",
   ar: "AR",
-  faxing: "Faxing"
+  faxing: "Faxing",
+  medicalbilling: "Medical Billing",
 };
 
 const DynamicSidebar = () => {

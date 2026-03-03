@@ -5,6 +5,7 @@ import ProtectedRoute from "./Protectedroute";
 import { Loader2Icon } from "lucide-react";
 import ARroutes from "./features/AR/routes/ARroutes";
 import FaxingRoutes from "./features/Faxing/routes/FaxingRoutes";
+import MedicalBillingRoutes from "./features/MedicalBilling/routes/MedicalBillingRoutes";
 
 // Lazy load pages and layouts
 const Login = lazy(() => import("./auth/Login"));
@@ -78,6 +79,7 @@ const AppRoutes = () => {
           <Route path="/callcenter/*" element={<CallCenterRoutes />} />
           <Route path="/ar/*" element={<ARroutes />} />
           <Route path="/faxing/*" element={<FaxingRoutes />} />
+          <Route path="/medicalbilling/*" element={<MedicalBillingRoutes />} />
         </Route>
 
         {/* 🔹 Catch all unknown routes */}
