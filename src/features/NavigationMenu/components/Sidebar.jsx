@@ -14,6 +14,7 @@ import {
   MonitorDot,
   CircleDollarSign,
   CircleArrowOutUpLeft,
+  Printer,
 } from "lucide-react";
 // lucide-react (modern + clean UI)
 import {
@@ -237,6 +238,49 @@ const sidebarMenus = {
       ],
     },
   ],
+  Faxing: [
+    {
+      name: "Call Management",
+      icon: IoIosCall,
+      link: "callmanagement",
+      submenu: [
+        { name: "GA Calls", link: "gacalls" },
+        {
+          name: "Calls",
+          link: "calls",
+        },
+        { name: "E-Checking", link: "e-checking" },
+        { name: "Balance ", link: "balance " },
+        { name: "No Show", link: "noshow" },
+        { name: "Voice Message", link: "voicemessage" },
+        { name: "Frontdesk tracking", link: "frontdesktracking" },
+        { name: "Medical Record", link: "medicalrecord" },
+        { name: "IT Support", link: "itsupport" },
+      ],
+    },
+    {
+      name: "Reporting",
+      icon: BarChart,
+      link: "reporting",
+    },
+    {
+      name: "HCDM",
+      icon: Printer,
+      link: "hcdm",
+      submenu: [
+        { name: "Forms", link: "forms" },
+        {
+          name: "Documents Sorting",
+          link: "documentssorting",
+        },
+        { name: "Appointment", link: "appointment" },
+        { name: "Balance ", link: "balance " },
+        { name: "End-to-End Exception", link: "endtoendexception" },
+        { name: "Lab Exceptions", link: "labexceptions" },
+        { name: "Established", link: "established" },
+      ],
+    },
+  ],
 };
 // Call Center
 //                 --->Call Group
@@ -249,6 +293,7 @@ const slugToDepartment = {
   callcenter: "Call Center",
   controlpannel: "Control Pannel",
   ar: "AR",
+  faxing: "Faxing"
 };
 
 const DynamicSidebar = () => {

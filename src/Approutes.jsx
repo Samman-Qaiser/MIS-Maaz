@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./Protectedroute";
 import { Loader2Icon } from "lucide-react";
 import ARroutes from "./features/AR/routes/ARroutes";
+import FaxingRoutes from "./features/Faxing/routes/FaxingRoutes";
 
 // Lazy load pages and layouts
 const Login = lazy(() => import("./auth/Login"));
@@ -76,6 +77,7 @@ const AppRoutes = () => {
           <Route path="/controlpannel/*" element={<ControlPannelRoutes />} />
           <Route path="/callcenter/*" element={<CallCenterRoutes />} />
           <Route path="/ar/*" element={<ARroutes />} />
+          <Route path="/faxing/*" element={<FaxingRoutes />} />
         </Route>
 
         {/* 🔹 Catch all unknown routes */}
