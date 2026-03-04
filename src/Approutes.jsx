@@ -77,7 +77,19 @@ const AppRoutes = () => {
           <Route path="/dashboard/*" element={<DashboardRoutes />} />
           <Route path="/controlpannel/*" element={<ControlPannelRoutes />} />
           <Route path="/callcenter/*" element={<CallCenterRoutes />} />
-          
+          <Route path="/ar/*" element={<ARroutes />} />
+          <Route path="/faxing/*" element={<FaxingRoutes />} />
+          <Route path="/medicalbilling/*" element={<MedicalBillingRoutes />} />
+          <Route path="/credentialing/*" element={<CredentialingRoutes />} />
+          <Route
+            path="/priorauthorization/*"
+            element={<PriorAuthorizationRoutes />}
+          />
+          <Route path="/whymuslims/*" element={<WhyMuslimsRoutes />} />
+          <Route
+            path="/patientcarecoordination/*"
+            element={<PatientCareCoordinationRoutes />}
+          />
         </Route>
 
         <Route
